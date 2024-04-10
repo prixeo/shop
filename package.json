@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "next dev -p 8000",
+    "typecheck": "tsc -p . --noEmit",
     "build": "next build",
     "start": "next start -p 8000",
     "lint": "next lint",
@@ -18,20 +19,23 @@
   },
   "resolutions": {
     "webpack": "^5",
-    "@types/react": "17.0.40"
+    "@types/react": "^18.2.6"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@hookform/error-message": "^2.0.0",
+    "@medusajs/icons": "^1.2.1",
     "@medusajs/link-modules": "^0.2.3",
     "@medusajs/medusa-js": "^6.1.7",
     "@medusajs/modules-sdk": "^1.12.3",
     "@medusajs/pricing": "^0.1.4",
     "@medusajs/product": "^0.3.4",
+    "@medusajs/types": "^1.11.15",
     "@medusajs/ui": "^2.2.0",
     "@meilisearch/instant-meilisearch": "^0.7.1",
     "@paypal/paypal-js": "^5.0.6",
     "@paypal/react-paypal-js": "^7.8.1",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@stripe/react-stripe-js": "^1.7.2",
     "@stripe/stripe-js": "^1.29.0",
     "algoliasearch": "^4.20.0",
@@ -57,7 +61,7 @@
     "@types/lodash": "^4.14.195",
     "@types/node": "17.0.21",
     "@types/pg": "^8.11.0",
-    "@types/react": "^18.2.42",
+    "@types/react": "17.0.40",
     "@types/react-dom": "^18.2.18",
     "@types/react-instantsearch-dom": "^6.12.3",
     "autoprefixer": "^10.4.2",
@@ -68,6 +72,6 @@
     "postcss": "^8.4.8",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.0.23",
-    "typescript": "^5.3.2"
+    "typescript": "^5.4.5"
   }
 }

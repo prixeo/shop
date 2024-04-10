@@ -55,15 +55,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
 
   return (
     <div>
-      <Listbox
-        as="span"
-        onChange={handleChange}
-        defaultValue={
-          countryCode
-            ? options?.find((o) => o.country === countryCode)
-            : undefined
-        }
-      >
+      <Listbox as="span" onChange={handleChange} value={current}>
         <Listbox.Button className="py-1 w-full">
           <div className="txt-compact-small flex items-start gap-x-2">
             <span>Shipping to:</span>
